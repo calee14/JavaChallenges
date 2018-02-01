@@ -30,6 +30,11 @@ public class fibonnacci {
 		return 0;
 	}
 	public static void main(String[] args) {
-		System.out.print(getevenfib(400000));
+		long startTime = System.nanoTime();
+		System.out.println(getevenfib(400000));
+		long endTime   = System.nanoTime();
+		long totalTimeMS = (endTime - startTime) / 1000000;
+		System.out.println("Program took " + totalTimeMS + " ms");
+		
 	}
 }

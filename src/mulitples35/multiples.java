@@ -15,7 +15,10 @@ public class multiples {
 		return total3 + total5;
 	}
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		System.out.println(getmultiples(3, 5));
-		
+		long endTime   = System.nanoTime();
+		long totalTimeMS = (endTime - startTime) / 1000000;
+		System.out.println("Program took " + totalTimeMS + " ms");
 	}
 }

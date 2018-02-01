@@ -26,6 +26,7 @@ public class smallmultiples {
 		return primes;
 	}
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		int divisorMax = 20;
 		List<Integer> p = finddivisibility(divisorMax);
 		int result = 1;
@@ -35,5 +36,8 @@ public class smallmultiples {
 			result = result * ((int)Math.pow(p.get(i), a));
 		}
 		System.out.println(result);
+		long endTime   = System.nanoTime();
+		long totalTimeMS = (endTime - startTime) / 1000000;
+		System.out.println("Program took " + totalTimeMS + " ms");
 	}
 }

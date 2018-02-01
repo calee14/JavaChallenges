@@ -30,6 +30,11 @@ public class findpalindromes {
 		return max;
 	}
 	public static void main(String[] arg) {
+		long startTime = System.nanoTime();
 		System.out.println(findlargestpalindrome(100,999));
+		long endTime   = System.nanoTime();
+		long totalTimeMS = (endTime - startTime) / 1000000;
+		System.out.println("Program took " + totalTimeMS + " ms");
+		
 	}
 }

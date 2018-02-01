@@ -24,8 +24,13 @@ public class largestprimefactor {
 		return max;
 	}
 	public static void main(String[] args) {
+		long startTime = System.nanoTime();
 		long value = 600851475143L;
 		List<Integer> num = findprimefactors(value);
 		System.out.println(getlargestfactor(num));
+		long endTime   = System.nanoTime();
+		long totalTimeMS = (endTime - startTime) / 1000000;
+		System.out.println("Program took " + totalTimeMS + " ms");
+		
 	}
 }
