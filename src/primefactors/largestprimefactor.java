@@ -12,6 +12,7 @@ public class largestprimefactor {
 			}
 			num += 1;
 		}
+		System.out.println(factors);
 		return factors;	
 	}
 	public static int getlargestfactor(List<Integer> nums) {

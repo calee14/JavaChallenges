@@ -25,6 +25,7 @@ public class smallmultiples {
 		}
 		return primes;
 	}
+	
 	public static void main(String[] args) {
 		long startTime = System.nanoTime();
 		int divisorMax = 20;
